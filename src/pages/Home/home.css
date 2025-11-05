@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    background: #081b29;
+    color: #fff;
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+
+/* ============ HERO SECTION ============ */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 4rem 10%;
+    padding-top: 120px;
+    position: relative;
+    background: linear-gradient(to right, #0d1117, #161b22);
+}
+
+
+/* ============ HERO IMAGE ============ */
+
+.hero-content {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    background-image: url("../../../public/gul.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 30px #58a6ff;
+    flex-shrink: 0;
+    animation: float 4s ease-in-out infinite;
+}
+
+.home_components {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background: #0d1117;
+    overflow-x: hidden;
+}
+
+.home_components section {
+    width: 100%;
+    padding: 60px 6%;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-margin-top: 80px;
+}
+
+.home_components section+section {
+    margin-top: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+@media (max-width: 768px) {
+    .home_components section {
+        padding: 40px 5%;
+    }
+    .hero {
+        padding-top: 140px;
+    }
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+/* ============ TEXT CONTENT ============ */
+
+.hero-text {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h3 {
+    font-size: 1.4rem;
+    color: #58a6ff;
+    margin-bottom: 0.5rem;
+    animation: fadeUp 1s ease forwards;
+    display: block;
+    visibility: visible;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    animation: fadeUp 1s ease forwards 0.2s;
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-text h3 span {
+    color: #58a6ff;
+}
+
+.hero-text p {
+    color: #ccc;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    animation: fadeUp 1s ease forwards 0.4s;
+}
+
+
+/* ============ BUTTON ============ */
+
+.hero-btn {
+    display: inline-block;
+    background: #58a6ff;
+    color: #081b29;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    animation: fadeUp 1s ease forwards 0.6s;
+    width: fit-content;
+    min-width: 140px;
+    text-align: center;
+}
+
+.hero-btn:hover {
+    background: #1f6feb;
+    box-shadow: 0 0 15px #58a6ff;
+    transform: scale(1.05);
+}
+
+
+/* ============ SOCIAL ICONS ============ */
+
+.home-sci {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    /* 👈 adds nice spacing before button */
+}
+
+.home-sci a {
+    width: 45px;
+    height: 45px;
+    border: 2px solid #58a6ff;
+    border-radius: 50%;
+    color: #58a6ff;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.home-sci a:hover {
+    background: #58a6ff;
+    color: #081b29;
+    transform: translateY(-5px);
+}
+
+
+/* ============ ANIMATIONS ============ */
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ============ RESPONSIVE DESIGN ============ */
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .hero-content {
+        width: 260px;
+        height: 260px;
+    }
+    .hero-text {
+        align-items: center;
+    }
+    .hero-text h1 {
+        font-size: 2.3rem;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .home-sci {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content {
+        width: 200px;
+        height: 200px;
+    }
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+    .hero-text h3 {
+        font-size: 1.1rem;
+        color: #58a6ff;
+        display: block;
+    }
+    .hero-text p {
+        font-size: 0.9rem;
+    }
+    .hero-btn {
+        min-width: 120px;
+        font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+    }
+    .home-sci {
+        margin-bottom: 2rem;
+        /* more gap for phones */
+    }
+}
