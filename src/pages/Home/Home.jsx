@@ -5,7 +5,7 @@ import Services from "../Services/Services";
 import Portfolio from "../Portfolio/Portfolio";
 import Skills from "../../Components/Skills/Skills";
 import Contact from "../Contact/Contact";
-import "./Home.css";
+import "./home.css";
 
 function Home() {
   const typedRef = useRef(null);
