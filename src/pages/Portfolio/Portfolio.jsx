@@ -19,7 +19,7 @@ function Portfolio() {
       description:
         "A full-stack MERN e-commerce platform with secure authentication, product search, and shopping cart.",
       image: "https://media.istockphoto.com/id/1428709516/photo/shopping-online-woman-hand-online-shopping-on-laptop-computer-with-virtual-graphic-icon.jpg?s=612x612&w=0&k=20&c=ROAncmFL4lbSQdU4VOhyXu-43ngzfEqHE5ZZAw5FtYk=",
-      link: "https://github.com/gulebest",
+      link: "https://amazon-dohy.vercel.app/",
     },
     {
       title: "Mobile App Application",
@@ -33,7 +33,7 @@ function Portfolio() {
       description:
         "A React + Firebase Netflix clone with live movie previews, authentication, and smooth UI interactions.",
       image: "https://i.ytimg.com/vi/44OcU1PJWCA/maxresdefault.jpg",
-      link: "https://github.com/gulebest",
+      link: "https://netflix-clone-2024-ei29.vercel.app/",
     },
     {
       title: "Abe Garage",
