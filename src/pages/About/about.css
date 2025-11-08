@@ -27,8 +27,10 @@
 
 .about-img img {
     width: 280px;
-    height: 280px;
-    border-radius: 50%;
+    height: 320px;
+    /* taller rectangular shape */
+    border-radius: 12px;
+    /* slight rounding for modern look */
     object-fit: cover;
     border: 3px solid #0ef;
     box-shadow: 0 0 30px rgba(0, 238, 255, 0.5);
@@ -97,8 +99,8 @@
         text-align: center;
     }
     .about-img img {
-        width: 220px;
-        height: 220px;
+        width: 240px;
+        height: 280px;
         margin-bottom: 1.5rem;
     }
     .about-text h2 {
@@ -109,5 +111,14 @@
     }
     .about-text p {
         font-size: 1rem;
+    }
+}
+
+
+/* Hide image completely on small/mobile screens */
+
+@media (max-width: 768px) {
+    .about-img {
+        display: none;
     }
 }

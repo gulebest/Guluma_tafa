@@ -19,7 +19,7 @@ function About() {
       <div className="about-container">
         {/* Image Side */}
         <div className="about-img" data-aos="fade-right">
-          <img src="/gul.jpg" alt="Gule Best" />
+          <img src="/gulebest.jpg" alt="Gule Best" />
         </div>
 
         {/* Text Side */}
