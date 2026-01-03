@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="logo">MyPortfolio</div>
+      <div className="logo">Gule Best</div>
 
       {/* Hamburger icon */}
       <div
